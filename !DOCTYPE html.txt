@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuned by Andrew</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #000, #555);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #ffd700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/2/21/Piano_keyboard_simple.svg') repeat-x;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2 {
+            color: #333;
+            font-family: 'Georgia', serif;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea, button {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background: #333;
+            color: #fff;
+        }
+
+        .keyboard-decor {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .keyboard-decor img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tuned by Andrew</h1>
+        <p>Professional Piano Tuning in Denver</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>The CHEAPEST piano tuner! I am a 20 year old student at the University of Denver. I played instruments my whole life and taught myself how to tune pianos. I absolutely love it.</p>
+        </section>
+
+        <div class="keyboard-decor">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Piano_keyboard_simple.svg" alt="Piano Keyboard">
+        </div>
+
+        <section class="contact-info">
+            <h2>Contact</h2>
+            <p>Phone: <a href="tel:+18435132375">(843) 513-2375</a></p>
+            <p>Email: <a href="mailto:andrewbachrodt2004@gmail.com">andrewbachrodt2004@gmail.com</a></p>
+        </section>
+
+        <section>
+            <h2>Book a Tuning</h2>
+            <form action="https://formspree.io/f/mexample" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number (optional):</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="date">Preferred Date and Time:</label>
+                <input type="text" id="date" name="date" required>
+
+                <label for="notes">Additional Notes:</label>
+                <textarea id="notes" name="notes" rows="4" placeholder="Any specific requests or details?"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tuned by Andrew. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
